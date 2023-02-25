@@ -7,7 +7,7 @@ Cloud native Spring Boot backend with support of cluster logging using an EFK st
 
 ## Status
 
-![Build status](https://drone.cloudtrain.aws.msgoat.eu/api/badges/msgoat/cnj-logging-backend-spring/status.svg)
+![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiclY3YllNU2NWeWF3ZmQrNFVPRDc1WFpMTHh1K20vTisxVWVMajk3aUsyS1F2djd4SDhJcU9CSFNrbXk1WDdJUmhIUWROaU5sZ3hLK2dqUWlTdDBSK3BBPSIsIml2UGFyYW1ldGVyU3BlYyI6IkY5aEtiT3M1YWxPVnI3V20iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
 ## Release information
 
@@ -50,4 +50,4 @@ If you don't want to use the JSON logging format you simply choose any other Spr
 mvn clean verify -P pre-commit-stage
 ```
 
-Build results: a Docker image containing a Quarkus application.
+Build results: a Docker image containing a Spring Boot application.

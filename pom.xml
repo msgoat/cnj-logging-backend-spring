@@ -9,14 +9,14 @@
     <description>Cloud native Java backend using Spring Data for persistence based on Spring Boot</description>
     <properties>
         <!-- new Maven version management -->
-        <revision>4.2.0</revision>
+        <revision>4.3.0</revision>
         <sha1></sha1>
         <changelist></changelist>
         <!-- common properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- runtime related properties -->
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <spring.boot.version>2.6.4</spring.boot.version>
         <!-- common logging dependencies -->
         <slf4j.version>1.7.32</slf4j.version>
@@ -61,7 +61,7 @@
         <!-- pinning versions of application type specific maven plugins -->
         <maven.spring.boot.plugin.version>${spring.boot.version}</maven.spring.boot.plugin.version>
         <!-- pinning versions of cloud native specific maven plugins -->
-        <maven.compose.plugin.version>3.0.0</maven.compose.plugin.version>
+        <maven.compose.plugin.version>4.0.0</maven.compose.plugin.version>
         <maven.docker.plugin.version>0.37.0</maven.docker.plugin.version>
         <maven.helm.plugin.version>4.0.0</maven.helm.plugin.version>
         <!-- quality assurance properties -->
@@ -162,7 +162,7 @@
         <dependency>
             <groupId>group.msg.at.cloud.common</groupId>
             <artifactId>cnj-common-observability-spring</artifactId>
-            <version>0.2.1</version>
+            <version>0.5.0</version>
         </dependency>
         <!-- =========================== -->
         <!-- test time dependencies      -->
@@ -175,13 +175,13 @@
         <dependency>
             <groupId>group.msg.at.cloud.common</groupId>
             <artifactId>cnj-common-test-core</artifactId>
-            <version>0.9.0</version>
+            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>group.msg.at.cloud.common</groupId>
             <artifactId>cnj-common-test-jakarta</artifactId>
-            <version>0.1.0</version>
+            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

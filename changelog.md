@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.3.0] - 2023-02-24
+### Changed
+- minor changes to make the build work on AWS CodeBuild
+
 ## [4.2.0] - 2022-03-12
 ### Added
 ### Changed
