@@ -19,7 +19,7 @@ container:
     image:
       repository: ${docker.image.name}
       tag: ${project.version}
-      pullPolicy: Always # IfNotPresent
+      pullPolicy: IfNotPresent
     ports:
       http:
         number: 8080
@@ -102,5 +102,5 @@ persistence:
     secret:
       name: cnj-logging-resources-postgres
       keys:
-        username: user
-        password: password
+        user: postgresql-user
+        password: postgresql-password
