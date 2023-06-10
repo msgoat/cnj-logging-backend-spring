@@ -42,12 +42,29 @@ The special JSON encoder will be activated when Spring profile `cloud` is activa
 If you don't want to use the JSON logging format you simply choose any other Spring profile except profile `cloud`.
 
 > Spring profiles are activated by adding an envvar `SPRING_PROFILES_ACTIVE` with a comma-separated list of profiles name that you wish to activate to your container configuration.
->
 
-## Build this application 
+## HOW-TO build this application locally 
 
-``` 
+If all prerequisites are met, just run the following Maven command in the project folder:
+
+```shell 
 mvn clean verify -P pre-commit-stage
 ```
 
 Build results: a Docker image containing a Spring Boot application.
+
+## HOW-TO run this showcase locally
+
+In order to run the whole showcase locally, just run the following docker commands in the project folder:
+
+```shell 
+docker compose up -d
+docker compose logs -f 
+```
+The showcase application will be accessible via `http://localhost:38100`.
+
+Press `Ctlr+c` to stop tailing the container logs and run the following docker command to stop the show case:
+
+```shell 
+docker compose down
+```
