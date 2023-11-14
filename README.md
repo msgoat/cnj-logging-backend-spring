@@ -51,7 +51,7 @@ If all prerequisites are met, just run the following Maven command in the projec
 mvn clean verify -P pre-commit-stage
 ```
 
-Build results: a Docker image containing a Spring Boot application.
+Build results: a Docker image containing the showcase application.
 
 ## HOW-TO run this showcase locally
 
