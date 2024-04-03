@@ -151,5 +151,5 @@ public class TasksEndpointSystemTest {
         assertThat(task.getCreatedBy()).as("createdBy of task [%s]", task).isNotBlank();
         assertThat(task.getLastModifiedAt()).as("lastModifiedAt of task [%s]", task).isBeforeOrEqualTo(LocalDateTime.now());
         assertThat(task.getLastModifiedBy()).as("lastModifiedBy of task [%s]", task).isNotBlank();
-     }
+    }
 }

@@ -1,14 +1,14 @@
 package group.msg.at.cloud.cloudtrain.core.entity;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -406,9 +406,7 @@ public class Task {
         if (getClass() != obj.getClass())
             return false;
         Task other = (Task) obj;
-        if (id != other.id)
-            return false;
-        return true;
+        return id == other.id;
     }
 
     /**
